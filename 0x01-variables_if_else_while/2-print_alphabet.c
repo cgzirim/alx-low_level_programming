@@ -1,18 +1,17 @@
-#include <stdio.h>
+nclude <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 /**
- *main - main block
- *Program prints alphabet in lowcase, followed by a new line
- *Return: 0
- */
+ * *main - main block
+ * *prints all the numbers of base 16 in lowercase
+ * *Return: 0
+ * */
 int main(void)
 {
-	char ch = 'a';
-	
-	for (ch = 'a'; ch <= 'z'; ch++)
-		
-		putchar(ch);
-	putchar('\n');
-	return (0);
+	int d;
+	        for (d = 0; d <= 15; d++)
+			        purchar(d + '0');
+		        purchar('\n');
+			return (0);
 }
+
