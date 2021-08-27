@@ -9,6 +9,7 @@
 int main(void)
 {
 	int d;
+	
 	for (d = 0; d <= 15; d++)
 		purchar(d + '0');
 		purchar('\n');
