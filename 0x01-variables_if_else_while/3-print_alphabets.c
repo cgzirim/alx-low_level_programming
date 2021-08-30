@@ -1,4 +1,10 @@
 #include <stdio.h>
+/**
+ * main - main Block
+ * Output alphabet in lower and upercase
+ * 
+ * return: 0
+ */
 int main(void)
 {
 char ch;
