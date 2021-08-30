@@ -1,12 +1,14 @@
 #include <stdio.h>
+/**
+ * main - main Block
+ * output all hexadecimal numbers
+ * Return: 0
+ */
 int main(void)
 {
 int num;
-for (num = 'a'; num <= 'z'; num++)
-{
-if (num == %x)
-(putchar(num + "0");
-}
+for (num = 0; num <= 9; num++)
+putchar(num + '0');
 putchar('\n');
 return (0);
 }
