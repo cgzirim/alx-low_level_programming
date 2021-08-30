@@ -1,5 +1,5 @@
 #include <stdio.h>
-int mai(void)
+int main(void)
 {
   char ch;
 
@@ -7,7 +7,8 @@ int mai(void)
     putchar(ch);
 
   for(ch='a'; ch<='z'; ch++)
-    putchat(ch);
+    putchar(ch);
+  putchar('\n')
 
   return (0);
 }
