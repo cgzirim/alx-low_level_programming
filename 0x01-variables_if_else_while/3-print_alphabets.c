@@ -1,9 +1,8 @@
 #include <stdio.h>
 /**
  * main - main Block
- * Output alphabet in lower and upercase
- * 
- * return: 0
+ * Output alphabet in lower and upercase 
+ * Return: 0
  */
 int main(void)
 {
