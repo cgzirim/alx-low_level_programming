@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - block main
- * output Holberton 
+ * output Holberton
  * Return: 0
  */
 int main(void)
