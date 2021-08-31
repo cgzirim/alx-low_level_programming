@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-char ch = "Holberton"
+char ch = 'Holberton';
 putchar(ch);
 return (0);
 }
