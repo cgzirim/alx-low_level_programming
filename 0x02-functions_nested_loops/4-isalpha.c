@@ -1,4 +1,3 @@
-
 #include "main.h"
 /**
  * _islower - checks if a character is
