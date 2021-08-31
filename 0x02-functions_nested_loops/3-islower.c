@@ -1,1 +1,13 @@
 #include "main.c"
+/**
+ * _islower(int c) checks if a character is 
+ * in lower case
+ * Return: Function returns 1 if argument is in lowercase and 0 if otherwise.
+ */
+int _islower(int c)
+{
+if (c >= 'a' && c <= 'z')
+return (1);
+else
+return (0);
+}
