@@ -1,4 +1,4 @@
-#include "main.c"
+#include "main.h"
 /**
  * _islower(int c) checks if a character is 
  * in lower case
