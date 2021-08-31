@@ -7,11 +7,13 @@ int print_sign(int n)
 {
 if (n > 0)
 {
-putchar(1 +'0'), return (1);
+putchar(1 +'0');
+return (1);
 }
 else if (n < 0)
 }
-putchar('_'), return (-1);
+putchar('_');
+return (-1);
 }
 else
 {
