@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "holberton.h"
 /**
  * main - Output alphabet
  * print_alphabet - Outputs alphabet to main
@@ -8,6 +8,6 @@ void print_alphabet()
 {
 char ch = 'a';
 for (ch = 'a'; ch <= 'z'; ch++)
-putchar(ch);
-putchar('\n');
+_putchar(ch);
+_putchar('\n');
 }
