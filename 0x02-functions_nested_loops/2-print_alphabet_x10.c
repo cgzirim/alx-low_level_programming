@@ -1,7 +1,8 @@
-#include "holberton.h"
+#include "main.h"
 /**
  * print_alphabet_x10 - Outputs the alphabets
- * in lowercase trn times
+ * in lowercase ten times
+ * Return: void
  */
 void print_alphabet_x10(void)
 {
