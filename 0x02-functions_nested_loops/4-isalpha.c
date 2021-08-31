@@ -1,14 +1,19 @@
 #include "main.h"
 /**
- * _islower - checks if a character is
- * in lower case or uppercase
- * Return: Function returns 1 if argument is in lowercase or uppercase  and 0 if otherwise.
- * @c:  Parameter to take an argument
+ * _isalpha - checks for lowercase character.
+ *
+ * @c: char type letter
+ *
+ * Return: 1 if c is lowercase or uppercase and 0 otherwise
  */
-int _islower(int c)
+int _isalpha(int c)
 {
-if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+if ((c >= 97 && c <= 123) || (c >= 65 && c <= 91))
+{
 return (1);
+}
 else
+{
 return (0);
+}
 }
