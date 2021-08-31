@@ -6,11 +6,15 @@
 int print_sign(int n)
 {
 if (n > 0)
-return (1)
-putchar(1 +'0');
+{
+putchar(1 +'0'), return (1);
+}
 else if (n < 0)
-return (-1)
-putchar('_');
+}
+putchar('_'), return (-1);
+}
 else
+{
 return (0);
+}
 }
