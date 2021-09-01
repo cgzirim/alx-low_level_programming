@@ -15,10 +15,10 @@ _putchar(':');
 _putchar((min / 10) + '0');
 _putchar((min % 10) + '0');
 _putchar('\n');
-if (m == 59)
+if (min == 59)
 {
-m = 0;
-h++;
+min = 0;
+hr++;
 }
 }
 return;
