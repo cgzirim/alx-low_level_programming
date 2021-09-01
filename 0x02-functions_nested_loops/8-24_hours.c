@@ -9,17 +9,17 @@ int min = 0, hr = 0;
 while (hr <= 23)
 {
 min++;
-if (min == 60)
-{
-hr++;
-min = 0;
-}
 _putchar((hr / 10) + '0');
 _putchar((hr % 10) + '0');
 _putchar(':');
 _putchar((min / 10) + '0');
 _putchar((min % 10) + '0');
 _putchar('\n');
+if (m == 59)
+{
+m = 0;
+h++;
+}
 }
 return;
 }
