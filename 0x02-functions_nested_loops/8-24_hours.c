@@ -15,7 +15,7 @@ if (hr == 23)
 break;
 _putchar((min / 10) + '0');
 _putchar((min % 10) + '0');
-_pitchar(':');
+_putchar(':');
 _putchar((hr / 10) + '0');
 _putchar((hr % 10) + '0');
 _putchar('\n');
