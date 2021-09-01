@@ -9,7 +9,7 @@ int min = 0, hr = 0;
 while (hr <= 23)
 {
 min++;
-if (min == 59)
+if (min == 60)
 {
 hr++;
 min = 0;
