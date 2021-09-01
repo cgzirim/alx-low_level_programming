@@ -5,21 +5,22 @@
  */
 void jack_bauer(void)
 {
-int min = 0, hr = 0;
-while (hr <= 23)
+int m = 0, h = -1;
+for (h; h <= 23; h++)
 {
-min++;
-if (min == 59)
 {
-min = 0;
-hr++;
+if (m == 59)
+{
+m = 0;
 }
-_putchar((hr / 10) + '0');
-_putchar((hr % 10) + '0');
+for (m; m <= 59; m++)
+_putchar((h / 10) + '0');
+_putchar((h % 10) + '0');
 _putchar(':');
-_putchar((min / 10) + '0');
-_putchar((min % 10) + '0');
+_putchar((m / 10) + '0');
+_putchar((m % 10) + '0');
 _putchar('\n');
+}
 }
 return;
 }
