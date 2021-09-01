@@ -5,7 +5,7 @@
  */
 void jack_bauer(void)
 {
-int min,hr;
+int min = 0, hr = 0;
 while (min < 60)
 {
 min++;
