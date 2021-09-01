@@ -13,11 +13,11 @@ if (min == 59)
 hr++;
 if (hr == 23)
 break;
-_putchar((min / 10) + '0');
-_putchar((min % 10) + '0');
-_putchar(':');
 _putchar((hr / 10) + '0');
 _putchar((hr % 10) + '0');
+_putchar(':');
+_putchar((min / 10) + '0');
+_putchar((min % 10) + '0');
 _putchar('\n');
 }
 return;
