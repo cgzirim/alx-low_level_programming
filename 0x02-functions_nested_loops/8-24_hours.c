@@ -20,5 +20,6 @@ _putchar(':');
 _putchar((min / 10) + '0');
 _putchar((min % 10) + '0');
 _putchar('\n');
+}
 return;
 }
