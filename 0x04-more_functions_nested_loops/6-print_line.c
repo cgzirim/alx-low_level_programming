@@ -1,5 +1,5 @@
 #include "main.h"
-include <stdio.h>
+#include <stdio.h>
 /**
  * print_line - output straight line
  * @n: parameter thant determines size of line
