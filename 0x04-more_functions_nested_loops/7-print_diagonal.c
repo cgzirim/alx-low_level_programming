@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * print_diagonal - Outputs a diagonal line
  * @n: gets length of diagonal
