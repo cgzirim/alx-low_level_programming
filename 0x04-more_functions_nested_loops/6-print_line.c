@@ -15,5 +15,5 @@ putchar('\n');
 else
 putchar('_');
 }
- return (0);
+return;
 }
