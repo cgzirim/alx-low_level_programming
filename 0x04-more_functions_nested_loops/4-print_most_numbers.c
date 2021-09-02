@@ -7,11 +7,12 @@
 void print_most_numbers(void)
 {
 int n;
-for (n = 0; n <= 9; n++)
+for (i = 0; i <= 9; i++)
 {
-if (n == 2 && n == 4)
+if ((i == 2) || (i == 4))
 continue;
-putchar(i + '0');
+else
+_putchar(i + '0');
 }
 putchar('\n');
 return;
