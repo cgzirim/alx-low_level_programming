@@ -13,8 +13,7 @@ if (n <= 0)
 putchar(' ');
 for (i = 0; i < n; n++)
 {
-space++;
-for (j = 0; j < space; j++)
+for (j = 0; j < i; j++)
 {
 putchar(' ');
 }
