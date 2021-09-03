@@ -1,7 +1,9 @@
 #include <stdio.h>
+#include "main.h"
 /**
- * main - Output 'Fizz' in place of multiples
- * of 3. Output Buzz for multiples of 5, and FizzBuzz for multiples of 15
+ * main - Entry point
+ * Description: Output 'Fizz' in place of multiples
+ *of 3. Output Buzz for multiples of 5, and FizzBuzz for multiples of 15
  * Return: return 0 always
  */
 int main(void)
@@ -16,7 +18,7 @@ printf("Buzz");
 else if ((n % 3) == 0)
 printf("Fizz");
 else
-printf("%i ", n);
+printf("%d", n);
 if (n < 100)
 printf(" ");
 }
