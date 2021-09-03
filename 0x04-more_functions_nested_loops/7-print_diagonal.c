@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 /**
  * print_diagonal - prints a diagonal line of length n
@@ -9,14 +10,14 @@ void print_diagonal(int n)
 {
 int a, b;
 if (n <= 0)
-_putchar('\n');
+putchar('\n');
 for (a = 0; a < n; a++)
 {
 for (b = 0; b < a; b++)
 {
-_putchar(' ');
+putchar(' ');
 }
-_putchar('\\');
-_putchar('\n');
+putchar('\\');
+putchar('\n');
 }
 }
