@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * print_line - output straight line
  * @n: parameter thant determines size of line
@@ -9,10 +10,14 @@ void print_line(int n)
 int i;
 for (i = 0; i <= n; i++)
 {
-if ((n == 0) || (n > 0))
-_putchar('\n');
+if (n <= 0)
+{
+putchar('\n');
+}
 else
-_putchar('_');
+{
+putchar('_');
+}
 }
 return;
 }
