@@ -4,7 +4,7 @@
  * of 3. Output Buzz for multiples of 5, and FizzBuzz for multiples of 15
  * Return: return 0 always
  */
-void fizz_buzz(void)
+void main(void)
 {
 int n;
 for (n = 0; n < 100; n++)
@@ -29,5 +29,5 @@ if (n < 100)
 printf(" ");
 }
 printf("\n");
-return;
+ return (0);
 }
