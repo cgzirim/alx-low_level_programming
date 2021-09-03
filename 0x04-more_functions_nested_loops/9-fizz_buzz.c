@@ -16,7 +16,7 @@ printf("Buzz");
 else if ((n % 3) == 0)
 printf("Fizz");
 else
-printf("%d ", n);
+printf("%i ", n);
 if (n < 100)
 printf(" ");
 }
