@@ -18,7 +18,7 @@ putchar('\n');
 else
 {
 a++;
-for (j = 0; j <= a; j++)
+for (j = 0; j < a; j++)
 {
 putchar(' ');
 }
