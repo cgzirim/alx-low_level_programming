@@ -1,5 +1,9 @@
 #include <stdio.h>
 #include "main.h"
+/**
+ * fizz_buzz - Output 'Fizz' in place of multiples of 3. Output Buzz for multiples of 5, and Fizz Buzz for multiples of 15
+ * Return: return 0 always
+ */
 void fizz_buzz(void)
 {
 int n;
