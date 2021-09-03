@@ -4,7 +4,7 @@
  * of 3. Output Buzz for multiples of 5, and FizzBuzz for multiples of 15
  * Return: return 0 always
  */
-void main(void)
+int main(void)
 {
 int n;
 for (n = 0; n < 100; n++)
