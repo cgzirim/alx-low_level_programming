@@ -11,7 +11,6 @@ int b = size;
 /* Print newline if size is <= zero */
 if (size <= 0)
 {
-_putchar(' ');
 _putchar('\n');
 }
 /* Loop that handles length of the tiangle */
@@ -22,7 +21,7 @@ b--;
 for (j = 0; j < 1; j++)
 {
 /* Loops that define number of space and # on a line */
-for (k = 0; k <= b; k++)
+for (k = 0; k < b; k++)
 {
 _putchar(' ');
 }
