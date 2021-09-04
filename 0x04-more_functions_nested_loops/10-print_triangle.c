@@ -11,8 +11,8 @@ int b = size;
 /* Print newline if size is <= zero */
 if (size <= 0)
 {
-putchar(' ');
-putchar('\n');
+_putchar(' ');
+_putchar('\n');
 }
 /* Loop that handles length of the tiangle */
 for (i = 0; i < size; i++)
@@ -24,13 +24,13 @@ for (j = 0; j < 1; j++)
 /* Loops that define number of space and # on a line */
 for (k = 0; k <= b; k++)
 {
-putchar(' ');
+_putchar(' ');
 }
 for (l = 0; l <= i; l++)
 {
-putchar('#');
+_putchar('#');
 }
-putchar('\n');
+_putchar('\n');
 }
 }
 }
