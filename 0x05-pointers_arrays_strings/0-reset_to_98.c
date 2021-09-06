@@ -3,7 +3,7 @@
 
 /**
  * reset_to_98 - change pointer's value
- * @*n: takes pointer of typer int
+ * @n: takes pointer of typer int
  */
 void reset_to_98(int *n)
 {
