@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <string.h>
 /**
  * _strlen - Generate length of a string
  * Return: string length
@@ -9,8 +10,10 @@ int _strlen(char *s)
 {
 	char string[] = *s;
 	int a;
-	for (i = 0; i <= string; i++)
+	int i;
+	for (i = 0; i <= strlen(string); i++)
 	{
+		if(string[i] != ' ')
 		a += i;
 	}
 	return (a);
