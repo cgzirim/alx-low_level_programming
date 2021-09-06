@@ -8,13 +8,14 @@
  */
 int _strlen(char *s)
 {
-	char string[] = *s;
 	int a;
-	int i;
-	for (i = 0; i <= strlen(string); i++)
+	size_t i;
+	const char *string = s;
+	size_t length = strlen(string);
+	for (i = 0; i < length; i++)
 	{
 		if(string[i] != ' ')
-		a += i;
+		a++;
 	}
 	return (a);
 }
