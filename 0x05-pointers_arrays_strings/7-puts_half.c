@@ -17,16 +17,16 @@ if (len % 2 == 0)
 {
 for (a = len / 2; str[a] != '\0'; a++)
 {
-_putchar(str[a]);
+putchar(str[a]);
 }
 }
 else if (len % 2)
 {
 for (n = (len - 1) / 2; n < len - 1; n++)
 {
-_putchar(str[n + 1]);
+putchar(str[n + 1]);
+	}
 }
-}
-_putchar('\n');
+putchar('\n');
 }
 
