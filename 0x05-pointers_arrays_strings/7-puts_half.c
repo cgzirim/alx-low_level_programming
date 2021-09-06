@@ -9,9 +9,13 @@ void puts_half(char *str)
 {
 int length = strlen(str);
 int i;
+float a = length;
+int b;
+int d = 2;
 for (i = 0; i < length ; i++)
 {
-if (i >= length / 2)
+b++;
+if (b >= a / d)
 putchar(str[i]);
 }
 printf("\n");
