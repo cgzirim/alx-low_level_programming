@@ -10,3 +10,4 @@ void print_square(int size);
 void print_triangle(int size);
 void _putchar(char c);
 void print_number(void);
+void print_integer(int m);
