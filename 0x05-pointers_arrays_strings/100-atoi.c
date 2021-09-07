@@ -4,30 +4,27 @@
 /**
  * _atoi - outputs all numbers in a string
  * @s: Collects string
+ * Return: integer in string
  */
 int _atoi(char *s)
 {
-int sign = 1, number = 0, index = 0;
-  /* Check for negative numbers */
-if(s[0] == '-')
+int sign = 1;
+unsigned int number = 0;
+char null_flag = 0;
+while (*s)
 {
-sign = -1;
-index = 1;
+if (*s == '-')
+sign *= -1;
+if (*s >= '0' && *s <= '9')
+{
+null_flag = 1;
+number =  number * 10 + *s - '0';
 }
-while(s[index] != '\0')
-{
-if(s[index] >= '0' && s[index] <= '9')
-{
-number = number*10 + s[index] - '0';
-}
-else
-{
+else if (null_flag)
 break;
+s++;
 }
-index++;
-}
-  /* multiply number with sign to make it negative number if sign < 0*/
-number = number * sign;
+if (sign < 0)
+number = (-number);
 return (number);
 }
-
