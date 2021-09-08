@@ -2,18 +2,20 @@
 #include <string.h>
 #include <stdio.h>
 /**
- *
+ * _strcat - concatenates two strings
+ * @src: source to move from
+ * @dest: destination to move to
+ * Return: concatenated string, dest.
  */
 char *_strcat(char *dest, char *src)
 {
-	size_t i;
-	size_t dest_len = strlen(src);
-	size_t src_len = strlen(src); 
-	for(i = 0; i < src_len && src[i] != '\0'; i++)
-{
-	dest[dest_len + i] = src[i];
-	/* dest[dest_len + 1] = '\0';*/
-}
-return(dest);
+	int i, j;
+
+	for (i = 0; dest[i] != '\0'; i++)
+		;
+	for (j = 0; src[j] != '\0'; j++)
+		dest[i + j] = src[j];
+	dest[i + j] = '\0';
+	return (dest);
 }
 
