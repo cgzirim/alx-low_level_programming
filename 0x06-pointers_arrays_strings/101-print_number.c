@@ -2,19 +2,22 @@
 #include <stdio.h>
 /**
  * print_number - outputs integer
- * @: interger
+ * @n: collects integer 
  */
 void print_number(int n)
 {
-	int sn = sizeof(n) / sizeof(int);
-	int digit[sn];
-	int i;
-	for (i = sn; i > 0; i--)
-	{
-		digits[i] = n % 10;
-		n = n / 10;
-		purchar(digits[i] + '\0');
-	}
-	putchar('\n');
+unsigned int n1;
+if (n < 0)
+{
+n1 = -n;
+putchar('-');
+}
+else
+{
+n1 = n;
+}
+if (n1 / 10)
+print_number(n1 / 10);
+putchar((n1 % 10) + '0');
 }
 
