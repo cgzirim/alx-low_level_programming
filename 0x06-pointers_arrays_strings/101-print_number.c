@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  * print_number - outputs integer
- * @n: collects integer 
+ * @n: collects integer
  */
 void print_number(int n)
 {
