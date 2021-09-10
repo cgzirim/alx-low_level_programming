@@ -8,24 +8,21 @@
  */
 int main(void)
 {
-int i, a, b;
-i = 0;
-while (i < 100)
+int i, j;
+for (i = 0; i <= 9; i++)
 {
-a = i % 10;
-b = i / 10;
-if (b < a)
+for (j = 1; j <= 9; j++)
 {
-putchar(b + '0');
-putchar(a + '0');
-if (i < 89)
+if (i < 9)
 {
-putchar(44);
-putchar(32);
+putchar(i + '0');
+putchar(j + '0');
+putchar(',');
+putchar(' ');
 }
 }
-i++;
 }
 putchar('\n');
 return (0);
 }
+
