@@ -19,10 +19,10 @@ int main(void)
 			c = j / 10;/* f digit*/
 			d = j % 10;/* s digit*/
 			
-			if(b == d || d == b)
+			/*if(b == d || d == b)
 			{
 				continue;
-			}
+			}*/
 			else
 			{
 			putchar(a + 48);
