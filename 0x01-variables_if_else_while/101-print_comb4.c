@@ -16,24 +16,28 @@
  */
 int main(void)
 {
-int i, j, k, l;
-for (i = 0; i < 1000; i++)
+int i, j, k;
+for (i = 0; i <= 9; i++)
 {
-j = i / 100; /* hundreds */
-k = (i / 10) % 10; /* tens */
-l = i % 10; /* singles */
-if (j < k && k < l)
+for (j = 1; j <= 9; j++)
 {
-putchar(j + '0');
-putchar(k + '0');
-putchar(l + '0');
-if (i < 700)
-{
-putchar(44);
-putchar(32);
+	for (k = 0; k < 9; k++)
+	{
+		if (i < j && j < k)
+		{
+			putchar(i + '0');
+			putchar(j + '0');
+			putchar(k + '0');
+			if (i < 8)
+			{
+				putchar(',');
+				putchar(' ');
+			}
+		}
+	}
 }
+putchar('\0');
 }
-}
-putchar('\n');
 return (0);
 }
+
