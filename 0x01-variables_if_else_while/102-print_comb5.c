@@ -17,20 +17,22 @@ a = i / 10;/* f digit*/
 b = i % 10;/* s digit*/
 /* second num*/
 c = j / 10;/* f digit*/
-d = j % 10;/* s digit*/			
+d = j % 10;/* s digit*/
 if (a < c || (a == c && b < d))
 {
-putchar(a + 48);
-putchar(b + 48);
-putchar(32);
-putchar(c + 48);
-putchar(d + 48);
-if (!(a == 9 && b == 8))			
-putchar(44);
-putchar(32);
+putchar (a + 48);
+putchar (b + 48);
+putchar (32);
+putchar (c + 48);
+putchar (d + 48);
+if (!(a == 9 && b == 8))
+{
+putchar (44);
+putchar (32);
 }
 }
 }
-putchar('\n');
+}
+putchar ('\n');
 return (0);
 }
