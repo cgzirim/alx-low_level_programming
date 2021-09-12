@@ -7,20 +7,25 @@
  */
 int main(void)
 {
-unsigned int i = 1;
-unsigned int n1 = 1, n2 = 2, n3;
-printf("%u, %u, ", n1, n2);
-while (i <= 50)
+int count = 2;
+long int i = 1, j = 2;
+long int k;
+printf("%lu, ", i);
+while (count <= 50)
 {
-printf("%u", n2);
-if (i < 50)
-printf(", ");
-n3 = n1;
-n2 += n1;
-n1 = n3;
-i++;
+if (count == 50)
+{
+printf("%lu\n", j);
 }
-printf("\n");
+else
+{
+printf("%lu, ", j);
+}
+k = j;
+j += i;
+i = k;
+count++;
+}
 return (0);
 }
 
