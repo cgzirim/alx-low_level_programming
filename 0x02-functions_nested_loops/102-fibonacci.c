@@ -9,13 +9,14 @@ int main(void)
 {
 int i;
 int n1 = 1, n2 = 2, n3;
-prinf("%d", n1);
+printf("%d", n1);
 while(i < 50)
 {
 n3 = n1 + n2;
 printf("%d", n3);
 n1 = n2;
 n2 = n3;
+i++;
 }
 return (0);
 }
