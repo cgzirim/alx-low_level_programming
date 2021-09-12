@@ -8,8 +8,8 @@
 int main(void)
 {
 unsigned int i = 1;
-unsigned in1 = 1, n2 = 2, n3;
-printf("%u", n1);
+unsigned int n1 = 1, n2 = 2, n3;
+printf("%u, ", n1);
 while (i <= 50)
 {
 n3 = n1 + n2;
