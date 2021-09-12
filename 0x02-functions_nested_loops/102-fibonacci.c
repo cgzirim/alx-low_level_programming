@@ -12,12 +12,12 @@ unsigned int n1 = 1, n2 = 2, n3;
 printf("%u, %u, ", n1, n2);
 while (i <= 50)
 {
-n3 = n1 + n2;
-printf("%u", n3);
-n1 = n2;
-n2 = n3;
+print("%u", n2);
 if (i < 50)
 printf(", ");
+n3 = n1;
+n2 += n1;
+n1 = n3;
 i++;
 }
 printf("\n");
