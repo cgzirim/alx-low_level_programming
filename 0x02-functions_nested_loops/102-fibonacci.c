@@ -7,14 +7,14 @@
  */
 int main(void)
 {
-long int i = 1;
-long int n1 = 1, n2 = 2, n3;
-printf("%lu", n1);
+unsigned int i = 1;
+unsigned in1 = 1, n2 = 2, n3;
+printf("%u", n1);
 while (i <= 50)
 {
 n3 = n1 + n2;
-printf("%lu", n3);
-n1 = n2;	
+printf("%u", n3);
+n1 = n2;
 n2 = n3;
 if (i < 50)
 printf(", ");
