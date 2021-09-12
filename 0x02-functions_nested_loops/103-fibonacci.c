@@ -7,28 +7,18 @@
  */
 int main(void)
 {
-int count = 2;
-long int i = 1, j = 2;
-long int k;
-printf("%lu, ", i);
-while (count <= 4000000)
+int i = 1, j = 2;
+int k;
+int sum;
+while (j <= 4000000)
 {
 if (j % 2 == 0)
-{
-if (count == 50)
-{
-printf("%lu\n", j);
-}
-else
-{
-printf("%lu, ", j);
-}
-}
+sum += j;
 k = j;
 j += i;
 i = k;
-count++;
-}	
+}
+printf("%d\n", sum);
 return (0);
 }
 
