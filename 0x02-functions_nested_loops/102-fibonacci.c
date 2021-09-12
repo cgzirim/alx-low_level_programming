@@ -7,24 +7,16 @@
  */
 int main(void)
 {
-int count = 2;
-long int i = 1, j = 2;
-long int k;
-printf("%lu, ", i);
-while (count <= 50)
+int i;
+int n1 = 1, n2 = 2, n3;
+prinf("%d", n1);
+while(i < 50)
 {
-if (count == 50)
-{
-printf("%lu\n", j);
-}
-else
-{
-printf("%lu, ", j);
-}
-k = j;
-j += i;
-i = k;
-count++;
+n3 = n1 + n2;
+printf("%d", n3);
+n1 = n2;
+n2 = n3;
 }
 return (0);
 }
+
