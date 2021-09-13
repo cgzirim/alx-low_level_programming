@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * _strchr - locates a character in a string.
  * @s: first string.
@@ -16,6 +17,7 @@ if (s[i] == c)
 return (s + i);
 }
 }
+putchar('\n');
 return ('\0');
 }
 
