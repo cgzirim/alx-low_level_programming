@@ -10,7 +10,7 @@ int row;
 int column;
 for (row = 0; row < 8; row++)
 {
-for (column =0; column < 8; column++)
+for (column = 0; column < 8; column++)
 {
 putchar(a[row][column]);
 }
