@@ -1,0 +1,10 @@
+#include "main.h"
+#include <math.h>
+/**
+ *
+ */
+int _sqrt_recursion(int n)
+{
+	if (squrt(n) != 0)
+
+}
