@@ -1,34 +1,35 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - Adds numbers passed into the program and print sum.
- * @argc: Argument counts number of commands passed
- * @argv: Collects arguments passed as an array of strings.
- * Return: One if argument is not a number, else return 0.
+ * main - Adds numbers passed into the program and\ print sum.
+ * @argc: Argument counts number of commands passe\d
+ * @argv: Collects arguments passed as an array of\ strings.
+ * Return: One if argument is not a number, else r\eturn 0.
  */
 int main(int argc, char *argv[])
 {
-	int i, sum = 0;
+	int count = 1;
+	int sum = 0;
 
 	if (argc < 1)
 	{
-		printf("%s\n", "Error");
+		printf("%s", "Error\n");
 		return (1);
 	}
-
-	for (i = 1; i < argc; i++)
+	while (count < argc)
 	{
-		char *num = argv[i];
+		char *argument = argv[count];
 
-		if (!atoi(num))
+		if (!atoi(argument))
 		{
 			printf("%s\n", "Error");
 			return (1);
 		}
 		else
 		{
-		sum += atoi(num);
+			sum += atoi(argument);
 		}
+		count++;
 	}
 	printf("%d\n", sum);
 	return (0);
