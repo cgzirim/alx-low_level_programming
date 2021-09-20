@@ -11,23 +11,32 @@ int main(int argc, char *argv[])
 	int count = 1;
 	int sum = 0;
 
-	if (argc < 1)
+	/**
+	 * if (argc <= 0)
 	{
 		printf("%s", "Error\n");
 		return (1);
 	}
+	*/
 	while (count < argc)
 	{
 		char *argument = argv[count];
 
-		if (!atoi(argument))
+		/**
+		 * if (!(argument / 2))
 		{
 			printf("%s\n", "Error");
 			return (1);
 		}
-		else
+		*/
+		if (atoi(argument) / 2)
 		{
 			sum += atoi(argument);
+		}
+		else
+		{
+			printf("%s\n", "Error");
+			return (1);
 		}
 		count++;
 	}
