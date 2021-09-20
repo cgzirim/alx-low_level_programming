@@ -13,19 +13,26 @@ int main(int argc, char *argv[])
 
 	for (i = 1; i < argc; i++)
 	{
-		for (j = 0; argv[i][j] != '\0'; j++)
-		{
 		char *argument = argv[i];
 
-		if (!atoi(argument) || (argv[i][j] > '9' || argv[i][j] < '0'))
+		for (j = 0; argv[i][j] != '\0'; j++)
+		{
+			if (argv[i][j] > '9' || argv[i][j] < '0')
+			{
+				printf("%s\n", "Error");
+				return (1);
+			}
+		}
+
+		if (!atoi(argument))
 		{
 			printf("%s\n", "Error");
 			return (1);
 		}
+
 		else
 		{
 			sum += atoi(argument);
-		}
 		}
 	}
 	printf("%d\n", sum);
