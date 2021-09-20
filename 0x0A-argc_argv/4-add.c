@@ -8,37 +8,25 @@
  */
 int main(int argc, char *argv[])
 {
-	int count = 1;
+	int i, j;
 	int sum = 0;
 
-	/**
-	 * if (argc <= 0)
+	for (i = 1; i < argc; i++)
 	{
-		printf("%s", "Error\n");
-		return (1);
-	}
-	*/
-	while (count < argc)
-	{
-		char *argument = argv[count];
+		for (j = 0; argv[i][j] != '\0'; j++)
+		{
+		char *argument = argv[i];
 
-		/**
-		 * if (!(argument / 2))
+		if (!atoi(argument) || (argv[i][j] > '9' || argv[i][j] < '0'))
 		{
 			printf("%s\n", "Error");
 			return (1);
-		}
-		*/
-		if (atoi(argument) / 2)
-		{
-			sum += atoi(argument);
 		}
 		else
 		{
-			printf("%s\n", "Error");
-			return (1);
+			sum += atoi(argument);
 		}
-		count++;
+		}
 	}
 	printf("%d\n", sum);
 	return (0);
