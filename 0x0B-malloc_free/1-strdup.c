@@ -11,21 +11,26 @@
 char *_strdup(char *str)
 {
 	char *s;
-	unsigned long int i;
+	unsigned long int i, len;
 
 	if (str == NULL)
 	{
 		return ('\0');
 	}
 
-	s = (void *)malloc(sizeof(str));
+	for (len = 0; str[len] != '\0'; len++)
+	{
+		;
+	}
+
+	s = (void *)malloc(sizeof(char) * len);
 
 	if (s == NULL)
 	{
 		return ('\0');
 	}
 
-	for (i = 0; i < sizeof(str); i++)
+	for (i = 0; i < len; i++)
 	{
 	s[i] = str[i];
 	}
