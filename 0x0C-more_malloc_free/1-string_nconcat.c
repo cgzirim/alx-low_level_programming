@@ -15,8 +15,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	if (s1 == NULL)
 		s1 = "";
+
 	if (s2 == NULL)
 		s2 = "";
+
 	l1 = sizeof(s2);
 
 	str = (char *)malloc((l1 + n) * sizeof(char));
