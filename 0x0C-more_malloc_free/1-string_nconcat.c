@@ -19,20 +19,22 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s2 == NULL)
 		s2 = "";
 
-	len = sizeof(s1);
+	for (i = 0; s1[i]; i++)
+		len++;
 
-	str = (char *)malloc((len + n + 1) * sizeof(char));
+	str = malloc((len + n + 1) * sizeof(char));
 
 	if (str == NULL)
 		return (NULL);
 
+	len = 0;
 	for (i = 0; s1[i]; i++)
-		str[i] = s1[i];
+		str[len++] = s1[i];
 
 	for (j = 0; s2[j] && j < n; j++)
-		str[i++] = s2[j];
+		str[len++] = s2[j];
 
-	str[i] = '\0';
+	str[len] = '\0';
 
 	return (str);
 }
