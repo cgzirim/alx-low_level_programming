@@ -2,13 +2,18 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * _strcpy - copies sting to another location
+ * _strcpy - copies sting to another memory location.
  * @dest: receives string
  * @src: copied from
  * Return: the pointer to dest
  */
 char *_strcpy(char *dest, char *src)
 {
-strcpy(dest, src);
-return (dest);
+	int i = 0;
+
+	for (i = 0; src[i] != '\0'; i++)
+		dest[i] = src[i];
+
+	return (dest);
 }
+
