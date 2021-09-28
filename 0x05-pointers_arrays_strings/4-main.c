@@ -7,9 +7,9 @@
  *     */
 int main(void)
 {
-	    char *str;
-
-	        str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
-		    print_rev(str);
+	   /* char str[];
+	        str = I do not fear computers. I fear the lack of them - Isaac Asimov";*/
+		    print_rev("Holberton");
 		        return (0);
 }
+

@@ -6,7 +6,7 @@
  * print_rev - outputs reverse of a string
  * @s: collect string
  */
-void print_rev(char *s)
+void print_rev(char s[])
 {
 int length = strlen(s);
 int i;
