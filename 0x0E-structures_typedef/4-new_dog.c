@@ -13,7 +13,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *dog;
 
-	if (name == NULL || age < 0 || owner == NULL)
+	if (!name || age < 0 || !owner)
 		return (NULL);
 
 	dog = malloc(sizeof(dog_t));
@@ -25,14 +25,14 @@ dog_t *new_dog(char *name, float age, char *owner)
 	dog->name = malloc(sizeof(char) * (strlen(name) + 1));
 		if (dog->name == NULL)
 		{
-			free(dog->name);
+			free(dog);
 			return (NULL);
 		}
 
 	dog->owner = malloc(sizeof(char) + (strlen(owner) + 1));
 		if (dog->owner == NULL)
 		{
-			free(dog->owner);
+			free(dog->name);
 			free(dog);
 			return (NULL);
 		}
@@ -43,4 +43,4 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	return (dog);
 }
-
+/* Learning to use struct and typedef in C*/
