@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "4-sum.h"
-#include "4-sum.h"
-
+#ifndef SUM_H
+#define SUM_H
 /**
  * main - check the code
  *
@@ -15,4 +15,4 @@ int main(void)
 	printf("%d\n", s);
 	return (0);
 }
-
+#endif /* ifndef SUM_H*/
