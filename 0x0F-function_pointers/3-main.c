@@ -5,6 +5,7 @@
  * main - Print result of simple operations.
  * @argc: Length of arguments supplied to the program.
  * @argv: An array of pointers to the arguments.
+ * Return: Always nothing.
  */
 int main(int argc, char *argv[])
 {
