@@ -12,24 +12,27 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	ssize_t o, r, w;
+	int o, r, w;
 	char *buffer;
 
 	if (!filename)
+		return (0);
+
+	o = open(filename, O_RDONLY);
+	if (o < 0)
 		return (0);
 
 	buffer = malloc(sizeof(char) * letters);
 	if (!buffer)
 		return (0);
 
-	o = open(filename, O_RDONLY);
 	r = read(o, buffer, letters);
 	buffer[r] = '\0';
 
 	close(o);
 
 	w = write(STDIN_FILENO, buffer, r);
-	if (o < 0 || r < 0 || w < 0 || w < r)
+	if (r < 0 || w < 0 || w < r)
 	{
 		free(buffer);
 		return (0);
