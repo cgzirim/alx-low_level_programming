@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 /**
  * main - Copies the content of a file to another file.
  * @argc: Argument count.
