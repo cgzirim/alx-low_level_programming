@@ -2,29 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-char *create_buffer(char *file);
 void close_file(int fd);
-
-/**
- * create_buffer - Allocates 1024 bytes for a buffer.
- * @file: The name of the file buffer is storing chars for.
- * Return: A pointer to the newly-allocated buffer.
- */
-
-char *create_buffer(char *file)
-{
-	char *buffer;
-
-	buffer = malloc(sizeof(char) * 1024);
-	if (!buffer)
-	{
-		dprintf(STDERR_FILENO,
-				"Error: Can't write to %s\n", file);
-		exit(99);
-	}
-
-	return (buffer);
-}
 
 /**
  * close_file - Closes file descriptor.
@@ -53,7 +31,7 @@ int main(int argc, char **argv)
 {
 /* file from, file to, read, write */
 	int ff, ft, r, w;
-	char *buffer;
+	char buffer[BUFSIZE];
 
 	if (argc < 3)
 	{
@@ -61,10 +39,9 @@ int main(int argc, char **argv)
 		exit(97);
 	}
 
-	buffer = create_buffer(argv[2]);
 	ff = open(argv[1], O_RDWR);
 	ft = open(argv[2], O_RDWR | O_CREAT | O_TRUNC, 0664);
-	r = read(ff, buffer, 1024);
+	r = read(ff, buffer, BUFSIZ);
 	w = write(ft, buffer, r);
 
 	if (ff < 0 || !argv[1])
