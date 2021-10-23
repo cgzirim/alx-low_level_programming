@@ -31,7 +31,7 @@ int main(int argc, char **argv)
 {
 /* file from, file to, read, write */
 	int ff, ft, r, w;
-	char buffer[BUFSIZE];
+	char buffer[BUFSIZ];
 
 	if (argc < 3)
 	{
