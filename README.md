@@ -1,6 +1,4 @@
-#
-Low-Level Programming - Algorithms, Data Structures, Linux/Unix System Programming
-#
+#Low-Level Programming - Algorithms, Data Structures, Linux/Unix System Programming#
 
 This repository contains programs written for the low-level programming and algorithm track at ALX School. In these projects I learned about data structures, algorithms, and other low-level programming concepts while working in the C language. The specific list of projects contained follows:
 - [0x00-hello_world] (https://github.com/iChigozirim/alx-low_level_programming/tree/master/0x00-hello_world)
