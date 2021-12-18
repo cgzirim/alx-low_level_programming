@@ -13,6 +13,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	hash_node_t *node;
 	unsigned long int index;
+	char *value_copy;
 
 	if (!ht || !key || *key == '\0' || !value)
 		return (0);
@@ -21,18 +22,19 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if (!node)
 		return (0);
 
+	value_copy = strdup(value);
+	if (!value_copy)
+	  {
+		  free(node);
+		  return (0);
+	  }
 	node->key = strdup(key);
 	if (!node->key)
 	{
 		free(node);
 		return (0);
 	}
-	node->value = strdup(value);
-	if (!node->value)
-	{
-		free(node);
-		return (0);
-	}
+	node->value = value_copy;
 
 	/* Get index for the element key.*/
 	index = key_index((const unsigned char *)key, ht->size);
