@@ -11,7 +11,7 @@
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-	hash_node_t *node, *last;
+	hash_node_t *node;
 	unsigned long int index;
 
 	if (!ht || !key || *key == '\0' || !value)
@@ -33,7 +33,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		free(node);
 		return (0);
 	}
-	node->next = NULL;
 
 	/* Get index for the element key.*/
 	index = key_index((const unsigned char *)key, ht->size);
@@ -43,16 +42,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (0);
 	}
 
-	/* Input pointer to node at index.*/
-	if (ht->array[index] == NULL)
-		ht->array[index] = node;
-	else
-	{
-		last = ht->array[index];
-		while (last->next != NULL)
-			last = last->next;
-		last->next = node;
-	}
+	node->next = ht->array[index];
+	ht->array[index] = node;
 
 	return (1);
 }
