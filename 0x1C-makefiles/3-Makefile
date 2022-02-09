@@ -1,0 +1,25 @@
+CC = gcc
+RM = rm -f
+SRC = main.c school.c
+OBJ = main.o school.o
+NAME = school
+
+# Build the executable. Recompile only the updated source files
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+
+# Delete all Emacs and Vim temporary files along with the executable
+clean:
+	$(RM) *~ $(NAME)
+
+# Delete the object files
+oclean:
+	$(RM) $(OBJ)
+
+# Deletes all Emacs and Vim temporary files, the executable, and the object files
+fclean:
+	$(RM) *~ $(NAME)
+	$(RM) $(OBJ)
+
+# Force recompilation of all source files
+re: oclean all
