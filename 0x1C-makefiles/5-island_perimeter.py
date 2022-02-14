@@ -1,3 +1,7 @@
+#!/usr/bin/python3
+"""Create a function that returns perimeter of an island described in a grid"""
+
+
 def island_perimeter(grid):
     """Returns the perimeter of the island described in grid."""
 
