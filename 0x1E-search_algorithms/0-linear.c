@@ -8,7 +8,7 @@
  * 
  * Return: If target value was found - 1. Otherwise - -1.
  */
-int linear_search(int *array, size_t size, int value)
+int linear_search(int *array, int size, int value)
 {
     int i = 0;
 
