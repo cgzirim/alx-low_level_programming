@@ -10,26 +10,26 @@
  * 
  * Returns: On success -  first index where value is located. Otherwise, -1.
  */
-int jump_search(int *array, int size, int value)
+int jump_search(int *array, size_t size, int value)
 {
-    int n = size - 1;
-    int jump = sqrt(n);
-    int lst_jmp = 0, i;
+    size_t n = size - 1;
+    size_t jump = sqrt(n);
+    size_t lst_jmp = 0, i;
 
     if (array == NULL)
         return (-1);
 
     while (jump <= n + sqrt(n))
     {
-        printf("Value checked array[%d] = [%d]\n", lst_jmp, array[lst_jmp]);
+        printf("Value checked array[%ld] = [%d]\n", lst_jmp, array[lst_jmp]);
         
         if (array[jump] >= value)
         {
-            printf("Value found between indexes [%d] and [%d]\n", lst_jmp, jump);
+            printf("Value found between indexes [%ld] and [%ld]\n", lst_jmp, jump);
             
             for (i = lst_jmp; i <= jump; i++)
             {
-                printf("Value checked array[%d] = [%d]\n", i, array[i]);
+                printf("Value checked array[%ld] = [%d]\n", i, array[i]);
 
                 if (array[i] == value)
                     return (i);
@@ -38,10 +38,10 @@ int jump_search(int *array, int size, int value)
 
         if (jump >= n + sqrt(n))
         {
-            printf("Value found between indexes [%d] and [%d]\n", lst_jmp, jump);
+            printf("Value found between indexes [%ld] and [%ld]\n", lst_jmp, jump);
             for (i = lst_jmp; i <= n; i++)
             {
-                printf("Value checked array[%d] = [%d]\n", i, array[i]);
+                printf("Value checked array[%ld] = [%d]\n", i, array[i]);
 
                 if (array[i] == value)
                     return (i);
