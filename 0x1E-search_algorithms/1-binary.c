@@ -9,11 +9,11 @@
  * 
  * Return: On success - index where value is locate. Otherwise - -1.
  */
-int binary_search(int *array, int size, int value)
+int binary_search(int *array, size_t size, int value)
 {
-    int i = 0;
-    int left = 0;
-    int right = size - 1;
+    size_t i = 0;
+    size_t left = 0;
+    size_t right = size - 1;
 
     while (right >= left)
     {
