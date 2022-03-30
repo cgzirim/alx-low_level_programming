@@ -13,8 +13,8 @@ int binary_search(int *array, size_t size, int value)
 {
 	size_t i = 0, left = 0,  right = size - 1;
 	
-	if (array == NULL)
-		return (-1);
+	/*if (array == NULL)
+		return (-1);*/
 
 	while (right >= left)
 	{
