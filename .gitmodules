@@ -1,9 +1,0 @@
-[submodule "binary_trees"]
-	path = binary_trees
-	url = git@github.com:iChigozirim/binary_trees.git
-[submodule "sorting_algorithms"]
-	path = sorting_algorithms
-	url = git@github.com:iChigozirim/sorting_algorithms.git
-[submodule "printf"]
-	path = printf
-	url = git@github.com:iChigozirim/printf.git
